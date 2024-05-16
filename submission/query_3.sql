@@ -1,4 +1,4 @@
-CREATE OR REPLACE TABLE jimmybroc65654.actors_history_scd (
+CREATE OR REPLACE TABLE actors_history_scd (
     actor   VARCHAR, -- actor name
     quality_class VARCHAR, -- text rating
     is_active BOOLEAN, -- actor active in current year

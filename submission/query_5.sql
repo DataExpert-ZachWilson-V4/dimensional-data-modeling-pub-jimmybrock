@@ -1,14 +1,14 @@
 -- incremental query that can populate a single years 
 -- worth of the actors_history_scd table by combining 
 -- the previous year's SCD data with the new incoming data from the actors table for this year.
-insert into jimmybrock65656.actors_history_scd
+insert into actors_history_scd
 -- last year data for a single year
 WITH
   last_year_scd AS (
     SELECT
       *
     FROM
-      jimmybrock65656.actors_history_scd
+      actors_history_scd
     WHERE
       current_year = 1943
   ),
@@ -17,7 +17,7 @@ WITH
     SELECT
       *
     FROM
-      jimmybrock65656.actors
+      actors
     WHERE
       current_year = 1944
   ), 

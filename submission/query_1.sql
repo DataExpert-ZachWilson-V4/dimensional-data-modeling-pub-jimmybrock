@@ -1,4 +1,4 @@
-CREATE OR REPLACE TABLE jimmybrock65656.actors (
+CREATE OR REPLACE TABLE actors (
         -- actor name
         actor       varchar,
         -- actor unique identifer 

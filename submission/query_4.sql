@@ -1,6 +1,6 @@
 -- Batch backfill query that can populate the entire 
 -- actors_history_scd table in a single query
-INSERT INTO  jimmybrock65656.actors_history_scd
+INSERT INTO  actors_history_scd
 -- get previous year data so we can compare to current year
 WITH lagged AS (
         SELECT
@@ -22,7 +22,7 @@ WITH lagged AS (
             as is_active_last_year,
             current_year
         FROM
-             jimmybrock65656.actors
+             actors
         WHERE
             current_year <= 2021
     ),
