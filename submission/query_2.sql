@@ -1,12 +1,12 @@
 -- CUMULATIVE TABLE COMPUTATION QUERY
-INSERT INTO jimmybrock65656.actors
+INSERT INTO actors
 WITH
     -- get last years data
   last_year AS (
     SELECT
       *
     FROM
-      jimmybrock65656.actors
+      actors
     WHERE
       current_year = 1913
   ),
@@ -26,7 +26,7 @@ WITH
       avg(a.votes) AS avg_votes,    -- average voes for film
       a.YEAR    -- year film came out
     FROM
-      bootcamp.actor_films a
+      actor_films a
     WHERE
       a.YEAR = 1914
       -- partition by actor/year
