@@ -1,6 +1,7 @@
 -- incremental query that can populate a single years 
 -- worth of the actors_history_scd table by combining 
 -- the previous year's SCD data with the new incoming data from the actors table for this year.
+
 insert into actors_history_scd
 -- last year data for a single year
 WITH
