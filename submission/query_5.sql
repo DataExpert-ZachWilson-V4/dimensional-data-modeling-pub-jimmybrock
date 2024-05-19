@@ -3,6 +3,7 @@
 -- the previous year's SCD data with the new incoming data from the actors table for this year.
 
 insert into actors_history_scd
+
 -- last year data for a single year
 WITH
   last_year_scd AS (
