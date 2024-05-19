@@ -26,7 +26,7 @@ WITH
       avg(a.votes) AS avg_votes,    -- average voes for film
       a.YEAR    -- year film came out
     FROM
-      actor_films a
+      bootcamp.actor_films a
     WHERE
       a.YEAR = 1914
       -- partition by actor/year
